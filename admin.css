@@ -61,8 +61,6 @@ p {
     cursor: pointer;
 }
 
-
-
 .white {
     filter: invert(97%) sepia(3%) saturate(1382%) hue-rotate(186deg) brightness(103%) contrast(98%);
     margin-right: 5px;
