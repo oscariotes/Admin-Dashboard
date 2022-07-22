@@ -1,10 +1,10 @@
 :root {
     --sidebar-bg-color: #1992d4;
     --sidebar-text-color: #fbfdfe;
-    --nav-bg-color: #f1dfdf;
+    --nav-bg-color: #ffffff;
     --main-bg-color: #e2e8f0;
     font-family: Arial, Helvetica, sans-serif;
-    --avatar1: url('https://github.com/luke.png');
+    --avatar1: url(/images/mario-49285.png);
     --avatar2: url('https://github.com/matthew.png');
     --avatar3: url('https://github.com/peter.png');
     --avatar4: url('https://github.com/thomas.png');
@@ -19,6 +19,17 @@ body {
     "sidebar main main main";
     grid-template-columns: .75fr 3.25fr 1fr;
     grid-template-rows: 1fr 4fr ;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .sidebar {
@@ -62,7 +73,7 @@ body {
     grid-area: nav;
     background-color: var(--nav-bg-color);
     padding: 1rem 2rem;
-    border-bottom: 2px solid #dae0e7;
+    border-bottom: 5px solid #e1e6ec;
 }
 
 .nav-top {
@@ -74,6 +85,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    cursor: pointer;
 }
 
 .nav-top-right {
@@ -81,24 +93,27 @@ body {
     gap: 25px;
     align-items: center;
     width: 100%;
+    cursor: pointer;
 }
 
 .avatar {
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .avatar-top {
     height: 80px;
     width: 80px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
  input {
     border-radius: 8px;
     padding: 8px 16px;
-    background-color: azure;
+    background-color: rgb(223, 241, 241);
     border: 0;
     width: 70%;
 }
@@ -108,6 +123,21 @@ body {
     grid-template-columns: 1fr max-content;
     box-sizing: border-box;
     width: 100%;
+ 
+}
+
+button {
+    background-color: var(--sidebar-bg-color);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 18px;
 }
 
 .nav-buttom-left {
@@ -142,6 +172,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .25fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+    padding: 10px 25px;
 }
 
 .announcement {
@@ -149,11 +181,30 @@ body {
     grid-template-rows: .4fr 1fr 1fr;
 }
 
+.project {
+    display: flex;
+    align-items: center;
+}
 .card {
     background-color: var(--sidebar-text-color);
     display: flex;
     flex-direction: column;
-}
+    justify-content: center;
+    padding: 20px 15px;
+    margin: 10px;
+    gap: 5px;
+    box-shadow: 1px 1px #dfe4e7, -1em 0 .2em #089ae2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .cardP {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+
 
 .share-icons {
     display: flex;
@@ -161,3 +212,54 @@ body {
     gap: 15px
 }
 
+.announcement {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    gap: 2rem;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.right-card {
+    background-color: var(--sidebar-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom:  20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow:  1px 1px  #acc8d6, -5px 0 .2em #acc8d6;
+}
+
+.right-card-child {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.right-card-child:nth-last-of-type(2) {
+    border-top: #089ae2 1px solid;
+    border-bottom: #089ae2 1px solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+
+.trending1 {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}

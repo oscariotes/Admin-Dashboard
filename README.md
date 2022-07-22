@@ -1,1 +1,1 @@
-Admin dashboard made from Html and CSS.
+Admin dashboard made from CSS grid and flex.
